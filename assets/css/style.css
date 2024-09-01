@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.header {
+  width: 100%;
+  background-color: #41B3A2;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-login {
+  padding: 10px;
+  width: 100px;
+  color: white;
+  border: none;
+  background-color: #0E15A1;
+  margin-right: 40px;
+  font-size: 18px;
+  font-family: arial;
+  border-radius: 10px;
+  
+}
+
+.logo {
+  vertical-align: middle;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: arial;
+  color: white;
+}
+
+.main-welcome {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  height: 690px;
+  
+}
+
+.content-welcome {
+  /* background-color: #0E15A1; */
+  height: 100px;
+  width: 50%;
+}
+
+.content-welcome-isi {
+  text-align: center;
+  font-size: 35px;
+  font-family: arial;
+  margin-bottom: 20px;
+  
+}
+
+.content-welcome p {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 0;
+  font-family: arial;
+  line-height: 30px;
+}
+
+.main-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 690px;
+}
+.content-login {
+  background-color: #41B3A2 ;
+  width: 350px;
+  
+  border-radius: 20px;
+  padding: 50px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: arial;
+  color: white;
+}
+
+.username {
+  padding: 10px;
+  width: 95%;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.password {
+  padding: 10px;
+  width: 95%;
+  border: none;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.btn-in {
+  padding: 10px;
+  border: none;
+  background-color: #0E15A1;
+  color: white;
+  width: 100px;
+  border-radius: 10px;
+  
+}
