@@ -3,6 +3,14 @@
   padding: 0;
 }
 
+body {
+  font-family: roboto;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #5E5E5E;
+  background-color: #edecec;
+}
+
 
 .header {
   width: 100%;
@@ -17,11 +25,12 @@
   width: 100px;
   color: white;
   border: none;
-  background-color: #0E15A1;
+  background-color:#FF9800;
   margin-right: 40px;
   font-size: 18px;
-  font-family: arial;
-  border-radius: 10px;
+  font-family: Roboto;
+  
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .16), 0 2px 10px rgba(0, 0, 0, .12);
   
 }
 
@@ -29,8 +38,8 @@
   vertical-align: middle;
   padding: 10px;
   font-size: 18px;
-  font-weight: bold;
-  font-family: arial;
+  font-weight: 400;
+  font-family: Roboto;
   color: white;
 }
 
@@ -53,7 +62,7 @@
 .content-welcome-isi {
   text-align: center;
   font-size: 35px;
-  font-family: arial;
+  font-family: Roboto;
   margin-bottom: 20px;
   
 }
@@ -62,7 +71,7 @@
   text-align: center;
   font-size: 25px;
   margin-top: 0;
-  font-family: arial;
+  font-family: Roboto;
   line-height: 30px;
 }
 
@@ -70,21 +79,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 690px;
+  height: 790px;
+  background-color: #41B3A2 ;
 }
 .content-login {
-  background-color: #41B3A2 ;
-  width: 350px;
   
+  width: 350px;
+  background-color: #f5f5f5;
   border-radius: 20px;
   padding: 50px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .16), 0 2px 10px rgba(0, 0, 0, .12);
 }
 
 label {
   display: block;
   margin-bottom: 5px;
   font-family: arial;
-  color: white;
+  color: rgb(7, 7, 7);
 }
 
 .username {
@@ -105,9 +116,293 @@ label {
 .btn-in {
   padding: 10px;
   border: none;
-  background-color: #0E15A1;
+  background-color:#2196F3;
   color: white;
   width: 100px;
-  border-radius: 10px;
+  
+   box-shadow: 0 2px 5px rgba(0, 0, 0, .16), 0 2px 10px rgba(0, 0, 0, .12);
   
 }
+
+
+
+/* main-dashboard */
+
+.main-dashboard {
+  background-color: #41B3A2;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.thumbnail-profil {
+  
+  vertical-align: middle;
+  display: grid;
+  grid-template-columns: 90px 5px;
+  
+  
+  
+}
+
+.btn-logout {
+  border: none;
+  background-color: #ec3e03;
+  color: white;
+  font-size: 13px;
+  border-radius: 5px;
+  font-family: Roboto;
+  padding: 16px 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .16), 0 2px 10px rgba(0, 0, 0, .12);
+  
+ 
+  
+}
+
+
+
+
+
+.header-dashboard {
+  vertical-align: middle;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: roboto;
+  color: white;
+}
+
+.mahasiswa-nama-profil {
+  color: white;
+  font-family: arial;
+  padding: 10px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  column-gap: 2px;
+  
+  row-gap: 10px;
+  
+}
+
+aside {
+  
+  
+  background-color: white;
+ box-shadow: 0 1px 1px rgba(0, 0, 0, .15);
+  
+  /* min-height: 600px; */
+  
+}
+
+
+.menu-dashboard {
+  
+  color: #000000;
+  background-color: rgba(248, 248, 248, 1);
+  text-align: center;
+  padding: 30px;
+  font-family: arial;
+  border-bottom: 2px solid rgba(0, 0, 0, .15);;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .15);
+  direction: ltr;
+  
+ 
+}
+
+.img-mhs { 
+  border-radius: 80px;
+  width: 100px;
+  margin-bottom: 10px;
+  
+}
+
+.nama-mhs {
+  font-size: 13px;
+  font-family: roboto;
+  font-weight: 400;
+  color: rgb(94,94,94);
+  margin-bottom: 5px;
+}
+
+.nim-mhs {
+  font-size: 12px;
+  color: rgb(94,94,94);
+  margin-bottom: 25px;
+  font-family: roboto;
+}
+
+
+.info-profile {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 0px;
+}
+
+.btn-lihat-profil {
+
+  padding: 10px 15px;
+  border: 0;
+  text-transform: uppercase;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .16), 0 2px 10px rgba(0, 0, 0, .12);
+  background-color: #FF9800;
+  color: #fff;
+
+}
+
+.btn-lihat-foto {
+padding: 10px 15px;
+border: 0;
+text-transform: uppercase;
+box-shadow: 0 2px 5px rgba(0, 0, 0, .16), 0 2px 10px rgba(0, 0, 0, .12);
+background-color: #2196F3;
+color: #fff;
+
+}
+
+
+
+
+/* navigasi menu side */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  /* width: 200px; */
+  /* background-color: #f1f1f1; */
+  /* position: fixed; */
+  /* height: 100%; */
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: roboto;
+  font-weight: 400;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: rgb(244, 244, 244);
+  color: rgb(23, 22, 22);
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: rgb(244, 244, 244);
+ color: rgb(23, 22, 22);
+}
+
+
+
+
+
+.content-dashboard {
+  
+  
+  background-color: #f5f5f5;
+  padding: 50px;
+  margin-top: 0px;
+  
+}
+
+.footer {
+  padding: 20px;
+  background-color:#41B3A2;
+  min-width: 1383px;
+  min-height: 100px;
+  font-family: arial;
+}
+
+.footer p{
+  color: white;
+  font-family: roboto;
+  font-size: 15px;
+}
+
+
+
+
+.content-dashboard-isi {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  row-gap: 20px;
+  column-gap: 30px;
+  margin-top: 10px;
+  
+}
+
+.ktm-content-front {
+  min-height: 300px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .16), 0 2px 10px rgba(0, 0, 0, .12);
+}
+
+.ktm-pic {
+  width: 100%;
+}
+
+.dosen-pa {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  font-size: 16px;
+  font-family: arial;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .16), 0 2px 10px rgba(0, 0, 0, .12);
+  
+}
+
+.status-mhs{
+  background-color: rgb(255, 255, 255);
+  min-height: 100px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .16), 0 2px 10px rgba(0, 0, 0, .12);
+  padding: 10px;
+  font-family: arial;
+  font-size: 18px;
+}
+
+.status-info {
+  padding: 12px;
+  background-color: #FF9800;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: roboto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .16), 0 2px 10px rgba(0, 0, 0, .12);
+}
+
+.status-semester {
+
+  padding: 12px;
+  background-color:#2196F3;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: roboto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .16), 0 2px 10px rgba(0, 0, 0, .12);
+  margin-top: 10px;
+
+}
+
+.dosen-pa {
+  display: flex;
+  gap: 10px;
+  
+}
+
+.pa-pic {
+  width: 50px;
+  border-radius: 50px;
+}
+
+.pic-pembimbing {
+  margin-top: 35px;
+}
+
+
