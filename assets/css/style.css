@@ -430,8 +430,10 @@ color: #fff;
   padding: 10px;
   line-height: 30px;
   font-size: 14px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .16), 0 2px 10px rgba(0, 0, 0, .12);
+ 
 }
 
 
@@ -439,7 +441,9 @@ color: #fff;
 
 background-color: #fff;
 padding: 10px;
-border-radius: 10px;
+
+box-shadow: 0 2px 5px rgba(0, 0, 0, .16), 0 2px 10px rgba(0, 0, 0, .12);
+ 
 
 }
 .table-krs table {
@@ -466,4 +470,86 @@ table .kosong {
   color: #fff;
 }
 
+.pilih-mk {
 
+background-color: #fff;
+padding: 20px;
+text-align: center;
+margin-top: 20px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, .16), 0 2px 10px rgba(0, 0, 0, .12);
+ 
+
+}
+.pilih-mk table {
+  width: 100%;
+}
+
+.toggle {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      width: 98px;
+      height: 30px;
+      position: relative;
+      border-radius: 20px;
+      display: inline-block;
+      overflow: hidden;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      background-color: #707070;
+      transition: background-color ease 0.3s;
+    }
+
+    .toggle:before {
+      content: "Ambil Tidak";
+      display: block;
+      position: absolute;
+      z-index: 2;
+      width: 25px;
+      height: 25px;
+      background: #fff;
+      left: 2px;
+      top: 2px;
+      border-radius: 50%;
+      font:bold 12px/28px Helvetica;
+      text-indent: -40px;
+      word-spacing: 30px;
+      color: #fff;
+      text-shadow: -1px -1px rgba(0,0,0,0.15);
+      white-space: nowrap;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+      transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;
+    }
+    .toggle:checked {background: #4CD964;}
+    .toggle:checked:before {left:70px;}
+
+
+.proses-simpan-krs {
+  background-color: #fff;
+  padding: 10px;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .16), 0 2px 10px rgba(0, 0, 0, .12);
+ 
+}
+
+.btn-simpan-krs {
+  padding: 12px 18px;
+  border: none;
+  background-color: #2196F3;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-batal-krs {
+  padding: 12px 20px;
+  border: none;
+  background-color: #ec3e03;
+  color: white;
+}
+
+.ket-semester {
+  font-size: 18px;
+  font-family: roboto;
+  
+}

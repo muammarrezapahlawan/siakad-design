@@ -54,7 +54,7 @@
             <i class="fa fa-fw fa-bookmark"></i> Panduan Aplikasi & Fitur</a
           >
           <a href="#contact"> <i class="fa fa-fw fa-info"></i> Info Kuliah</a>
-          <a href="#about">
+          <a href="krs.html">
             <i class="fa fa-fw fa-laptop"></i> Kartu Rencana Studi</a
           >
           <a href="#about">
@@ -67,65 +67,89 @@
         </div>
       </aside>
       <div class="content-dashboard">
-        <h2 style="font-family: arial; font-size: 20px">
-          PENGAMBILAN KARTU RENCANA STUDI
-        </h2>
-
-        <div class="content-dashboard-isi">
-          <div class="info-TA">
-            <p style="display: inline-block">Tahun ajaran</p>
-            <input
-              type="text"
-              name="search"
-              style="
-                padding: 4px;
-                width: 40%;
-                border: none;
-                background-color: rgb(245, 246, 246);
-              "
-              placeholder="Cari Tahun Ajaran"
-            />
-            <p>Semester</p>
-          </div>
-        </div>
-
-        <div class="table-krs">
-          <button class="btn-tambah-mk">
-            <a href="form-krs.html"> <i class="fa fa-fw fa-plus"></i> Tambah</a>
-          </button>
-          <table border="1">
+        <h2 style="font-family: arial; font-size: 20px">TAMBAH MATA KULIAH</h2>
+        <p class="ket-semester">Semester: 1</p>
+        <div class="pilih-mk">
+          <table border="0">
             <tr>
               <th>No</th>
-              <th>Mata Kuliah</th>
-              <th>Semester</th>
-              <th>Sks</th>
-              <th>Nama Dosen</th>
+              <th>Kode Matakuliah</th>
+              <th>Nama Matakuliah</th>
+              <th>Kategori Matakuliah</th>
+              <th></th>
             </tr>
 
             <tr>
-              <td colspan="5" class="kosong">Tidak ada</td>
+              <td>1</td>
+              <td>MKA987TI</td>
+              <td>Algoritma Pemrograman</td>
+              <td>Wajib</td>
+              <td><input id="swbtn" class="toggle" type="checkbox" /></td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>MK8889TI</td>
+              <td>Logika Informatika</td>
+              <td>Wajib</td>
+              <td><input id="swbtn" class="toggle" type="checkbox" /></td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>MKA887TI</td>
+              <td>Bahasa Inggris</td>
+              <td>Wajib</td>
+              <td><input id="swbtn" class="toggle" type="checkbox" /></td>
+            </tr>
+
+            <tr>
+              <td>4</td>
+              <td>MKA789TI</td>
+              <td>Pengantar Teknologi Informasi</td>
+              <td>Wajib</td>
+              <td><input id="swbtn" class="toggle" type="checkbox" /></td>
+            </tr>
+
+            <tr>
+              <td>5</td>
+              <td>MKA777TI</td>
+              <td>Aljabar Linear dan matriks</td>
+              <td>Wajib</td>
+              <td><input id="swbtn" class="toggle" type="checkbox" /></td>
+            </tr>
+
+            <tr>
+              <td>5</td>
+              <td>MKA888TI</td>
+              <td>Komunikasi Data</td>
+              <td>Wajib</td>
+              <td><input id="swbtn" class="toggle" type="checkbox" /></td>
+            </tr>
+
+            <tr>
+              <td>6</td>
+              <td>MKA789TI</td>
+              <td>Pancasila</td>
+              <td>Wajib</td>
+              <td><input id="swbtn" class="toggle" type="checkbox" /></td>
+            </tr>
+
+            <tr>
+              <td>7</td>
+              <td>MKA212TI</td>
+              <td>Bahasa Indonesia</td>
+              <td>Wajib</td>
+              <td><input id="swbtn" class="toggle" type="checkbox" /></td>
             </tr>
           </table>
         </div>
-        <div
-          style="
-            background-color: #fff;
-            margin-top: 20px;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16),
-              0 2px 10px rgba(0, 0, 0, 0.12);
-          "
-          class="cetak-krs"
-        >
-          <button
-            style="
-              padding: 12px 18px;
-              border: none;
-              background-color: #2196f3;
-              color: #fff;
-            "
-          >
-            <i class="fa fa-fw fa-print"></i> Cetak Krs
+        <div class="proses-simpan-krs">
+          <button class="btn-simpan-krs" onclick="klik_simpan_mk()">
+            <i class="fa fa-fw fa-save"></i> Simpan
+          </button>
+          <button class="btn-batal-krs">
+            <i class="fa fa-fw fa-close"></i> Batal
           </button>
         </div>
       </div>
@@ -138,6 +162,7 @@
         </div>
       </div>
     </section>
+    <script src="assets/js/script.js"></script>
     <script>
       feather.replace();
     </script>
